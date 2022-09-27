@@ -118,13 +118,24 @@ function ExamplePage(props) {
                 fontWeight: "bold",
                 padding: ".8rem",
                 borderRadius: "50%",
-                backgroundColor: "red",
+                backgroundColor: "#FF6600",
                 display: "flex",
                 alignItems: "center",
+                color: "#fff",
               }}
             >
-              JK
+              <i>JK</i>
             </Typography>
+            <Stack
+              direction={"row"}
+              justifyContent="flex-end"
+              alignItems={"flex-end"}
+              width="100%"
+            >
+              <Typography variant="body1" color="initial">
+                3 deals (€ 26000,00)
+              </Typography>
+            </Stack>
           </Stack>
           <Stack direction={"row"} mt={2} spacing={1}>
             <Paper
@@ -150,7 +161,7 @@ function ExamplePage(props) {
                   mt: 1,
                 }}
                 primary={<>0</>}
-                secondary={<>WITHOUT ACTIVITY</>}
+                secondary={<>OLDER THAN 3 MONTHS</>}
               />
             </Paper>
             <Paper
@@ -163,7 +174,7 @@ function ExamplePage(props) {
                   mt: 1,
                 }}
                 primary={<>0</>}
-                secondary={<>WITHOUT ACTIVITY</>}
+                secondary={<>WITHOUT CLOSING DATE</>}
               />
             </Paper>
           </Stack>
@@ -204,18 +215,73 @@ function ExamplePage(props) {
                 </Typography>
               </Stack>
               <Paper
-                sx={{ width: "19rem", margin: "0 auto", borderRadius: "0" }}
+                sx={{ width: "19rem", margin: "0 auto", borderRadius: "5px" }}
                 elevation={2}
                 p={1}
               >
-                <ListItemText
-                  sx={{
-                    ml: 1,
-                    mt: 1,
-                  }}
-                  primary={<>0</>}
-                  secondary={<>WITHOUT ACTIVITY</>}
-                />
+                <Stack
+                  p={1}
+                  direction={"row"}
+                  justifyContent="space-between"
+                  alignItems={"center"}
+                >
+                  <Stack>
+                    <Typography
+                      variant="body1"
+                      color="initial"
+                      fontWeight={"bold"}
+                    >
+                      Bedrijf(test data)
+                    </Typography>
+
+                    <Typography variant="body1" color="initial">
+                      Open deal(test data)
+                    </Typography>
+                  </Stack>
+                  <Typography
+                    variant="body1"
+                    color="initial"
+                    sx={{
+                      fontWeight: "bold",
+                      padding: ".5rem",
+                      borderRadius: "50%",
+                      backgroundColor: "#FF6600",
+                      display: "flex",
+                      alignItems: "center",
+                      color: "#fff",
+                    }}
+                  >
+                    <i>JK</i>
+                  </Typography>
+                </Stack>
+                <Stack
+                  direction={"row"}
+                  justifyContent="flex-end"
+                  alignItems={"flex-end"}
+                  width="100%"
+                  p={1}
+                >
+                  <Typography
+                    variant="body1"
+                    color="initial"
+                    fontWeight={"bold"}
+                  >
+                    € 100000,00
+                  </Typography>
+                </Stack>
+                <Stack
+                  direction={"row"}
+                  justifyContent="space-between"
+                  alignItems={"center"}
+                  p={1}
+                >
+                  <Button variant="outlined" color="primary" size="small">
+                    12/08/2022
+                  </Button>
+                  <Button variant="outlined" color="primary" size="small">
+                    30%
+                  </Button>
+                </Stack>
               </Paper>
             </Paper>
             <Paper
@@ -236,18 +302,73 @@ function ExamplePage(props) {
                 </Typography>
               </Stack>
               <Paper
-                sx={{ width: "19rem", margin: "0 auto", borderRadius: "0" }}
+                sx={{ width: "19rem", margin: "0 auto", borderRadius: "5px" }}
                 elevation={2}
                 p={1}
               >
-                <ListItemText
-                  sx={{
-                    ml: 1,
-                    mt: 1,
-                  }}
-                  primary={<>0</>}
-                  secondary={<>WITHOUT ACTIVITY</>}
-                />
+                <Stack
+                  p={1}
+                  direction={"row"}
+                  justifyContent="space-between"
+                  alignItems={"center"}
+                >
+                  <Stack>
+                    <Typography
+                      variant="body1"
+                      color="initial"
+                      fontWeight={"bold"}
+                    >
+                      Bedrijf(test data)
+                    </Typography>
+
+                    <Typography variant="body1" color="initial">
+                      Open deal(test data)
+                    </Typography>
+                  </Stack>
+                  <Typography
+                    variant="body1"
+                    color="initial"
+                    sx={{
+                      fontWeight: "bold",
+                      padding: ".5rem",
+                      borderRadius: "50%",
+                      backgroundColor: "#FF6600",
+                      display: "flex",
+                      alignItems: "center",
+                      color: "#fff",
+                    }}
+                  >
+                    <i>JK</i>
+                  </Typography>
+                </Stack>
+                <Stack
+                  direction={"row"}
+                  justifyContent="flex-end"
+                  alignItems={"flex-end"}
+                  width="100%"
+                  p={1}
+                >
+                  <Typography
+                    variant="body1"
+                    color="initial"
+                    fontWeight={"bold"}
+                  >
+                    € 100000,00
+                  </Typography>
+                </Stack>
+                <Stack
+                  direction={"row"}
+                  justifyContent="space-between"
+                  alignItems={"center"}
+                  p={1}
+                >
+                  <Button variant="outlined" color="primary" size="small">
+                    12/08/2022
+                  </Button>
+                  <Button variant="outlined" color="primary" size="small">
+                    10%
+                  </Button>
+                </Stack>
               </Paper>
             </Paper>
             <Paper
@@ -286,18 +407,73 @@ function ExamplePage(props) {
                 </Typography>
               </Stack>
               <Paper
-                sx={{ width: "19rem", margin: "0 auto", borderRadius: "0" }}
+                sx={{ width: "19rem", margin: "0 auto", borderRadius: "5px" }}
                 elevation={2}
                 p={1}
               >
-                <ListItemText
-                  sx={{
-                    ml: 1,
-                    mt: 1,
-                  }}
-                  primary={<>0</>}
-                  secondary={<>WITHOUT ACTIVITY</>}
-                />
+                <Stack
+                  p={1}
+                  direction={"row"}
+                  justifyContent="space-between"
+                  alignItems={"center"}
+                >
+                  <Stack>
+                    <Typography
+                      variant="body1"
+                      color="initial"
+                      fontWeight={"bold"}
+                    >
+                      Bedrijf(test data)
+                    </Typography>
+
+                    <Typography variant="body1" color="initial">
+                      Open deal(test data)
+                    </Typography>
+                  </Stack>
+                  <Typography
+                    variant="body1"
+                    color="initial"
+                    sx={{
+                      fontWeight: "bold",
+                      padding: ".5rem",
+                      borderRadius: "50%",
+                      backgroundColor: "#FF6600",
+                      display: "flex",
+                      alignItems: "center",
+                      color: "#fff",
+                    }}
+                  >
+                    <i>JK</i>
+                  </Typography>
+                </Stack>
+                <Stack
+                  direction={"row"}
+                  justifyContent="flex-end"
+                  alignItems={"flex-end"}
+                  width="100%"
+                  p={1}
+                >
+                  <Typography
+                    variant="body1"
+                    color="initial"
+                    fontWeight={"bold"}
+                  >
+                    € 100000,00
+                  </Typography>
+                </Stack>
+                <Stack
+                  direction={"row"}
+                  justifyContent="space-between"
+                  alignItems={"center"}
+                  p={1}
+                >
+                  <Button variant="outlined" color="primary" size="small">
+                    Won
+                  </Button>
+                  <Button variant="outlined" color="primary" size="small">
+                    100%
+                  </Button>
+                </Stack>
               </Paper>
             </Paper>
           </Stack>
